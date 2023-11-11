@@ -1,81 +1,81 @@
+# Homepage
 
-`# Ultimatives Frontend-Template  ![Vorschau](https://cdn.discordapp.com/attachments/797485737272541250/952208625806495815/image_5.png)  > Die meisten Elemente stammen von [meiner Webseite](https://einfachalex.net).  [![Mit Vercel bereitstellen](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=Einfachalf/TemplateCSS)  ## Inhaltsstoffe ✨:  - NextJS 🚀 - TailwindCSS 🦄 - Typescript 🦺 - Unterstützung für den Dunkelmodus 🌓 - ESLint + Prettier Konfiguration 📂 - Husky 🐶 - Selbst gehostete Inter-Schriftart ␊  Im Ordner _components_ verwende für jede deiner Seiten den Container, da er einen wiederverwendbaren Ausgangspunkt für jede Seite bietet.  ```jsx <Container>...SeitenElemente</Container>`
+Dies ist die offizielle Codebasis für [EinfachAlex's Homepage](https://einfachalex.net), eine ultimative Frontend-Vorlage, die mit NextJs, TailwindCSS und Typescript erstellt wurde.
 
-Erste Schritte
---------------
+## Beschreibung
 
-1.  Mit 'Als Vorlage verwenden' im Repository ![Vorschau](https://cdn.discordapp.com/attachments/797485737272541250/952208604386189332/Group_11.png)
-    
-2.  Das Projekt klonen
-    
+Dieses Projekt ist eine maßgeschneiderte Lösung für moderne Webentwicklungsbedürfnisse, die Leistung, Anpassbarkeit und beste Praktiken kombiniert, um Entwicklern und Designern zu helfen, ihre Projekte effizient zu starten und zu verwalten.
 
-bashCopy code
+## Beginnen
 
-`# http git clone https://github.com/Einfachalf/TemplateCSS.git`
+Um das Projekt lokal zu starten, folgen Sie diesen einfachen Schritten:
 
-bashCopy code
+### Voraussetzungen
 
-`# ssh git clone git@github.com:Einfachalf/TemplateCSS.git`
+- Node.js
+- npm oder pnpm
 
-3.  Mit `create-next-app`
+### Installation
 
-luaCopy code
+Klonen Sie das Repository:
 
-`npx create-next-app -e https://github.com/Einfachalf/TemplateCSS Projektname`
+```bash
+git clone https://github.com/EinfachAlex/homepage.git
+cd homepage
+```
 
-Installiere die erforderlichen Pakete und starte die Vorlage
+````
 
-bashCopy code
+Installieren Sie die Abhängigkeiten:
 
-`cd Projektname yarn install`
+```bash
+npm install
+```
 
-Inbegriffen
------------
+oder wenn Sie `pnpm` verwenden:
 
-### Benutzerdefinierte classNames-Funktion
+```bash
+pnpm install
+```
 
-> Unter `/lib/classNames`
+### Entwicklungsserver starten
 
-### Pakete
+```bash
+npm run dev
+```
 
-1.  Next-Themes: Eine Abstraktion für Themes in deiner Next.js-App.
-2.  react-use: react-hooks
+oder für `pnpm`:
 
-### Benutzerdefinierte globals.css
+```bash
+pnpm dev
+```
 
-1.  Benutzerdefinierte Unterstreichung
-2.  Vercel-Navigationsleiste
-3.  Behebt Firefox-, Edge- und IE-Bugs bei Überläufen
+Öffnen Sie [http://localhost:3000](http://localhost:3000), um das Projekt im Browser zu sehen.
 
-### Absolute Importe
+## Verwendung
 
-javascriptCopy code
+Erklären Sie, wie man weitere wichtige Scripts verwendet, die in Ihrem Projekt enthalten sind, wie das Bauen für die Produktion oder das Ausführen von Lint-Checks:
 
-`import TextField from '../../../components/TextField.tsx'`
+```bash
+npm run build
+npm start
+```
 
-ändert sich zu
+## Mitwirken
 
-javascriptCopy code
+Beiträge sind willkommen! Bitte lesen Sie [CONTRIBUTING.md](CONTRIBUTING.md) für Details über unseren Code of Conduct und den Prozess für das Einreichen von Pull Requests.
 
-`import TextField from 'components/TextField.tsx'`
+## Lizenz
 
-### SEO-Optimierung in `Container.tsx`
+Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe [LICENSE.md](LICENSE.md) Datei für Details.
 
-### Ordnerstruktur & Organisation
+## Kontakt
 
-> Unter `/components/` & `/public/`
+- E-Mail: info@einfachalex.net
+- Projektlink: [https://github.com/EinfachAlex/homepage](https://github.com/EinfachAlex/homepage)
 
-### Selbst gehostete Inter-Schriftart
+```
 
-> Unter `/public/fonts/`
-
-### 404-Seite
-
-### Favicons und weitere Konfigurationen
-
-> Unter `/public/static/favicons/`
-
-![Vorschau](https://cdn.discordapp.com/attachments/797485737272541250/952211815046197278/Frame_7.png)
-
-
-
+Sie können diese Vorlage kopieren und in eine `README.md` Datei in Ihrem Repository einfügen. Denken Sie daran, jegliche spezifische Details Ihres Projekts zu ergänzen oder zu ändern, um sicherzustellen, dass die Dokumentation klar und hilfreich für Benutzer ist, die mit Ihrem Projekt arbeiten möchten.
+```
+````
