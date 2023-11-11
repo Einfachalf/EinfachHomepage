@@ -1,16 +1,22 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "private": "true",
+  "optionalDependencies": {
+    "fsevents": "^2.3.3"
+  },
+  "private": true,
   "description": "Ultimate Front-end Template made using NextJs, TailwindCSS, and Typescript",
   "author": {
     "email": "info@einfachalex.net",
     "name": "EinfachAlex",
-    "url": "https://eifachalex.net"
+    "url": "https://einfachalex.net"
   },
   "license": "MIT",
-  "repositoryUrl": "https://eifachalex.net",
-  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EinfachAlex/homepage"
+  },
+  "homepage": "https://einfachalex.net",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -31,7 +37,7 @@
     "react-dom": "^18.2.0",
     "react-use": "^17.4.0",
     "tailwind": "^4.0.0",
-    "uuid": "9.0.1",
+    "uuid": "^9.0.1",
     "vercel": "^32.5.3"
   },
   "devDependencies": {
@@ -42,7 +48,7 @@
     "autoprefixer": "^10.4.8",
     "daisyui": "^3.9.4",
     "eslint": "^8.23.0",
-    "eslint-config-next": "12.3.0",
+    "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.8",
@@ -54,7 +60,7 @@
     "typescript": "^4.8.3"
   },
   "lint-staged": {
-    "*.{tsx},*.{ts},*.{mdx}": [
+    "*.{tsx,ts,mdx}": [
       "eslint --fix"
     ]
   },
@@ -75,5 +81,11 @@
       "last 1 safari version"
     ]
   },
-  "keywords": []
+  "keywords": [],
+  "eslintConfig": {
+    "rules": {
+      "prettier/prettier": "off",
+      "semi": "off"
+    }
+  }
 }

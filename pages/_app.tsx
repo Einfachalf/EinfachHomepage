@@ -1,7 +1,9 @@
+// pages/_app.tsx
+
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 
-import 'styles/globals.css';
+import 'styles/globals.css' // Hier wurde das Semikolon entfernt;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
