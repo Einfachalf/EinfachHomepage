@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react';
-import { useTheme } from 'next-themes'; // Vergessen Sie nicht, useTheme zu importieren
-import Container from 'components/Container'; 
-
 const NeueSeite: React.FC = () => {
-  const { theme } = useTheme(); 
+  const { theme } = useTheme();
 
   useEffect(() => {
-    const iframe = document.getElementById('themeChangerFrame');
+    const iframe = document.getElementById('themeChangerFrame') as HTMLIFrameElement;
+    
     if (iframe) {
       iframe.contentWindow.postMessage({ theme: theme }, '*');
     }
   }, [theme]);
+
+  // Rest Ihres Codes...
+};
 
   // Rest Ihres Codes...
   
