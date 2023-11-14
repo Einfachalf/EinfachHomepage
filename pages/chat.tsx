@@ -1,3 +1,6 @@
+import React, { useEffect } from 'react';
+import { useTheme } from 'next-themes';
+
 const NeueSeite: React.FC = () => {
   const { theme } = useTheme();
 
@@ -8,7 +11,6 @@ const NeueSeite: React.FC = () => {
       iframe.contentWindow!.postMessage({ theme: theme }, '*');
     }
   }, [theme]);
-
   
   return (
     <Container>
