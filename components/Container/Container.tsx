@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-import { useTheme } from 'next-themes'
 import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useTheme } from 'next-themes'
 
 import Footer from 'components/Footer/Footer'
 import cn from 'lib/classNames'
@@ -69,6 +69,12 @@ export default function Container(props: any) {
             <Link href='/'>
               <a className='transition-all cursor-pointer hover:text-primary'>
                 Home
+              </a>
+            </Link>
+            {/* Neuer Menüpunkt für die Page-Komponente */}
+            <Link href='/chat'>
+              <a className='transition-all cursor-pointer hover:text-primary'>
+                Chat
               </a>
             </Link>
           </div>
