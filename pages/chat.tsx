@@ -1,9 +1,9 @@
 // pages/NeueSeite.tsx
-import React, { useEffect } from 'react';
-import Container from 'components/Container'; 
+import { useTheme } from 'next-themes'; // Importieren von useTheme
 
 const NeueSeite: React.FC = () => {
-  const { theme } = useTheme();
+  const { theme } = useTheme(); // Verwenden von useThemeimport { useTheme } from 'next-themes'; // Importieren von useTheme
+
 
   useEffect(() => {
     const iframe = document.getElementById('themeChangerFrame');
