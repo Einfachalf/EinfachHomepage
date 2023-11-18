@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Container from 'components/Container';
 
-const NeueSeite: React.FC = () => {
+const NeueSeite2: React.FC = () => {
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const NeueSeite: React.FC = () => {
   );
 };
 
-export default NeueSeite;
+export default NeueSeite2;
