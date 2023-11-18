@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@huggingface/hub": "^0.10.0",
+    "@huggingface/inference": "^2.5.1",
+    "ai": "2.2.21",
     "debug": "^4.3.4",
     "eslint-config-prettier": "^8.5.0",
     "fsevents": "^2.3.3",
