@@ -83,6 +83,18 @@ export default function Container(props: any) {
                 Image-AI
               </a>
             </Link>
+            {/* Neuer Menüpunkt für die Page-Komponente */}
+            <Link href='/prompt'>
+              <a className='transition-all cursor-pointer hover:text-primary'>
+                Prompt-Generator
+              </a>
+            </Link>
+            {/* Neuer Menüpunkt für die Page-Komponente */}
+            <Link href='/hugg'>
+              <a className='transition-all cursor-pointer hover:text-primary'>
+                Chat
+              </a>
+            </Link>
           </div>
           <div className='flex flex-row items-center space-x-4'>
             <a

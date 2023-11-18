@@ -2,14 +2,15 @@ import React, { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Container from 'components/Container';
 
-const NeueSeite: React.FC = () => {
+const NeueSeite3: React.FC = () => {
   const { theme } = useTheme();
 
   useEffect(() => {
     const iframe = document.getElementById('themeChangerFrame') as HTMLIFrameElement;
 
     if (iframe) {
-      iframe.contentWindow?.postMessage({ theme: theme }, '*');
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      iframe.contentWindow!.postMessage({ theme: theme }, '*');
     }
   }, [theme]);
 
@@ -18,7 +19,7 @@ const NeueSeite: React.FC = () => {
   <iframe
     id="themeChangerFrame"
     title="Beschreibung des Inhalts"  // Füge hier eine kurze Beschreibung hinzu
-    src="https://togetherai-togetherchat-coder.hf.space"
+    src="https://togetherai-einfachllamistral.hf.space"
     style={{
       position: "absolute",
       top: 0,
@@ -33,4 +34,4 @@ const NeueSeite: React.FC = () => {
   );
 };
 
-export default NeueSeite;
+export default NeueSeite3;

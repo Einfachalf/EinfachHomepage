@@ -79,3 +79,7 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe [LICENSE.md](LICENSE.
 Sie können diese Vorlage kopieren und in eine `README.md` Datei in Ihrem Repository einfügen. Denken Sie daran, jegliche spezifische Details Ihres Projekts zu ergänzen oder zu ändern, um sicherzustellen, dass die Dokumentation klar und hilfreich für Benutzer ist, die mit Ihrem Projekt arbeiten möchten.
 ```
 ````
+
+Probleme:
+
+pnpm add core-js@2.6.12 debug@4.1.1 fsevents@2.1.3 sourcemap-codec@1.4.8 uuid@3.3.2
