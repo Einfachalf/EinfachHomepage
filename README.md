@@ -1,10 +1,13 @@
+
+
+```markdown
 # Homepage
 
 Dies ist die offizielle Codebasis für [EinfachAlex's Homepage](https://einfachalex.net), eine ultimative Frontend-Vorlage, die mit NextJs, TailwindCSS und Typescript erstellt wurde.
 
 ## Beschreibung
 
-Dieses Projekt ist eine maßgeschneiderte Lösung für moderne Webentwicklungsbedürfnisse, die Leistung, Anpassbarkeit und beste Praktiken kombiniert, um Entwicklern und Designern zu helfen, ihre Projekte effizient zu starten und zu verwalten.
+Dieses Projekt ist eine maßgeschneiderte Lösung für moderne Webentwicklungsbedürfnisse, die Leistung, Anpassbarkeit und beste Praktiken kombiniert, um Entwicklern und Designern zu helfen, ihre Projekte effizient zu starten und zu verwalten. Dieses prohekt beinhaltet eine CHatfunktion sowie Textgenerierungsmodule, Image Generierung via Huggingface. </
 
 ## Beginnen
 
@@ -24,8 +27,6 @@ git clone https://github.com/EinfachAlex/homepage.git
 cd homepage
 ```
 
-````
-
 Installieren Sie die Abhängigkeiten:
 
 ```bash
@@ -36,6 +37,12 @@ oder wenn Sie `pnpm` verwenden:
 
 ```bash
 pnpm install
+```
+
+Zusätzlich benötigen Sie folgende Abhängigkeiten:
+
+```bash
+pnpm add core-js@2.6.12 debug@4.1.1 fsevents@2.1.3 sourcemap-codec@1.4.8 uuid@3.3.2
 ```
 
 ### Entwicklungsserver starten
@@ -73,13 +80,5 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe [LICENSE.md](LICENSE.
 
 - E-Mail: info@einfachalex.net
 - Projektlink: [https://github.com/EinfachAlex/homepage](https://github.com/EinfachAlex/homepage)
-
 ```
 
-Sie können diese Vorlage kopieren und in eine `README.md` Datei in Ihrem Repository einfügen. Denken Sie daran, jegliche spezifische Details Ihres Projekts zu ergänzen oder zu ändern, um sicherzustellen, dass die Dokumentation klar und hilfreich für Benutzer ist, die mit Ihrem Projekt arbeiten möchten.
-```
-````
-
-Probleme:
-
-pnpm add core-js@2.6.12 debug@4.1.1 fsevents@2.1.3 sourcemap-codec@1.4.8 uuid@3.3.2
