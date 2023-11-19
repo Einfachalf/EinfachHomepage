@@ -1,5 +1,4 @@
 
-
 ```markdown
 # Homepage
 
@@ -7,7 +6,7 @@ Dies ist die offizielle Codebasis für [EinfachAlex's Homepage](https://einfacha
 
 ## Beschreibung
 
-Dieses Projekt ist eine maßgeschneiderte Lösung für moderne Webentwicklungsbedürfnisse, die Leistung, Anpassbarkeit und beste Praktiken kombiniert, um Entwicklern und Designern zu helfen, ihre Projekte effizient zu starten und zu verwalten. Dieses prohekt beinhaltet eine CHatfunktion sowie Textgenerierungsmodule, Image Generierung via Huggingface. </
+Dieses Projekt ist eine maßgeschneiderte Lösung für moderne Webentwicklungsbedürfnisse, die Leistung, Anpassbarkeit und beste Praktiken kombiniert, um Entwicklern und Designern zu helfen, ihre Projekte effizient zu starten und zu verwalten.
 
 ## Beginnen
 
@@ -47,14 +46,16 @@ pnpm add core-js@2.6.12 debug@4.1.1 fsevents@2.1.3 sourcemap-codec@1.4.8 uuid@3.
 
 ### Entwicklungsserver starten
 
+Um sowohl Frontend als auch Backend (oder andere parallele Prozesse) gleichzeitig zu starten, verwenden Sie:
+
 ```bash
-npm run dev
+npm run both
 ```
 
 oder für `pnpm`:
 
 ```bash
-pnpm dev
+pnpm run both
 ```
 
 Öffnen Sie [http://localhost:3000](http://localhost:3000), um das Projekt im Browser zu sehen.
@@ -78,7 +79,17 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe [LICENSE.md](LICENSE.
 
 ## Kontakt
 
-- E-Mail: info@einfachalex.net
+- E-Mail: <info@einfachalex.net>
 - Projektlink: [https://github.com/EinfachAlex/homepage](https://github.com/EinfachAlex/homepage)
+
 ```
 
+Bitte stelle sicher, dass das `package.json` deines Projekts ein Skript namens `both` enthält, das die parallele Ausführung deiner Prozesse ermöglicht. Wenn du `concurrently` verwendest, könnte der Eintrag so aussehen:
+
+```json
+"scripts": {
+  "both": "concurrently \"npm run server\" \"npm run client\""
+}
+```
+
+Ersetze `"npm run server"` und `"npm run client"` durch die entsprechenden Befehle für deine spezifischen Prozesse.
